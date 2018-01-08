@@ -25,7 +25,7 @@ source /mountpoint/parallel_studio_xe_2016.4.072/psxevars.sh
 ```
 
 # Running the Container
-After building the image, QuantumEspresso can be run as follows, using Intel MPI. It is a good idea to set I_MPI_DEBUG to verbose mode so that you can make sure the communications go through the fabric — not the Ethernet — in case your cluster is backed by an InfiniBand interconnect:
+After building the image, QuantumEspresso can be run as follows, using Intel MPI. It is a good idea to set `I_MPI_DEBUG` to verbose mode so that you can make sure the communications go through the fabric — not the Ethernet — in case your cluster is backed by an InfiniBand interconnect:
 
 ```Bash
 mpirun -genv I_MPI_DEBUG=5 -hostfile ./hosts -np 16 singularity run ./qe.img pw.x < input_file
