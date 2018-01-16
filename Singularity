@@ -1,6 +1,6 @@
 Bootstrap: yum
 OSVersion: 7
-MirrorURL: http://mirror.shpc.iau.edu.sa/centos7/
+MirrorURL: http://mirror.iau.edu.sa/centos7/
 Include: yum
 
 %help
